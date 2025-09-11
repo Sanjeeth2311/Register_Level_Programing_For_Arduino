@@ -44,3 +44,4 @@ Notes
 
 The for loops are used to create a delay effect. For more precise timing, consider using delay() or hardware timers.
 Ensure the LED is connected with the correct polarity and a current-limiting resistor.
+For GitHub, ensure the assets (LED_Blinking.png, LED_Blinking_Circuit.png, LED_Blinking_Circuit.mp4) are uploaded to the same directory as this README file in your repository.
