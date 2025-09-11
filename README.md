@@ -21,7 +21,6 @@ The circuit is super simple: an LED wired to an Arduino digital pin. Here’s ho
 📸 **Visuals**:
 - Circuit Diagram: [LED_Blinking_Circuit.png](./LED_Blinking_Circuit.png)
 - Circuit Photo: [LED_Blinking.png](./LED_Blinking.png)
-- Demo Video: [LED_Blinking_Circuit.mp4](./LED_Blinking_Circuit.mp4)
 
 ---
 
