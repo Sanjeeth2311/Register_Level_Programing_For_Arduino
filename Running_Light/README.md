@@ -1,37 +1,44 @@
-Running Light Project
-Overview
-This project implements a running light sequence using an Arduino microcontroller. The code controls a series of LEDs connected to a port, creating a pattern where each LED lights up sequentially and then turns off, producing a "running" effect.
-Hardware Requirements
+# Running Light Project
 
-Arduino board (e.g., Arduino Uno)
-8 LEDs
-Resistors (appropriate values for your LEDs, typically 220-330 ohms)
-Breadboard and jumper wires
+This project demonstrates a simple running light sequence using an Arduino microcontroller and 8 LEDs.  The LEDs illuminate sequentially, creating a visually appealing "running" effect.
 
-Circuit Setup
-The circuit consists of 8 LEDs connected to a single port of the Arduino. Each LED is connected to a pin of the port (e.g., PORTD on Arduino Uno) through a current-limiting resistor. Refer to the images below for the circuit diagram and setup.
-Images
+## Features
 
-Running Light Circuit Diagram: Running_Light_Circuit
-Running Light Setup: Running_Light
+* *Sequential LED Illumination:*  Each LED lights up one after the other, creating a running light effect.
+* *Arduino-based Control:* Uses an Arduino microcontroller for easy programming and control.
+* *Simple Circuit:*  Requires minimal components: LEDs, resistors, and a breadboard.
+* *Wokwi Simulation:*  Includes a link to a Wokwi simulation for testing without hardware.
 
-Simulation
-You can simulate this project using Wokwi. Visit the following link to try it out:Wokwi Simulation
-Code Description
-The Arduino code consists of two main functions:
+## Hardware Used
 
-setup(): Configures the port direction by setting the data direction register (DDR) to output mode (0x30).
-loop(): Repeatedly sets the port data register (0x31) to different values (0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80) to light each LED in sequence, with delays implemented using for loops (100,000 iterations of setting the port to the value and then to 0x00).
+* *Arduino:* Arduino Maga
+* *LEDs:* 8 LEDs (any color)
+
+## Installation
+
+1. *Hardware Setup:*
+   * Connect 8 LEDs to an Arduino port (e.g., PORTD) through current-limiting resistors (220-330 ohms each).  Refer to the Running_Light_Circuit.jpg diagram.
+   * Connect the Arduino to your computer using a USB cable.
+2. *Software Setup:*
+   * Install the Arduino IDE ([https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)).
+   * Download the Arduino code from this repository.
+   * Open the Arduino code in the Arduino IDE.
+3. *Upload Code:*
+   * Select your Arduino board from the Tools menu in the Arduino IDE.
+   * Select the correct port from the Tools menu.
+   * Click the upload button to upload the code to your Arduino.
+
+## Usage
+
+After uploading the code, power the Arduino. You should observe the LEDs illuminating sequentially, creating the running light effect.
+
+## Wokwi Simulation
+
+Test the project virtually using the Wokwi simulator: [Wokwi Simulation Link](https://wokwi.com/projects/441788934650700801)
 
 
-How to Run
+## Notes
 
-Connect the LEDs to the Arduino as shown in the circuit diagram.
-Upload the provided code to the Arduino using the Arduino IDE.
-Power the Arduino to observe the running light effect, where each LED lights up in sequence.
-
-Notes
-
-The delay in the code is implemented using busy-wait loops (100,000 iterations). For more precise timing, consider using Arduino's delay() function.
-Ensure the LEDs are connected to the correct port (e.g., PORTD, addressed as 0x30 for DDR and 0x31 for PORT on ATmega328P-based Arduinos).
-The images (Running_Light.jpg and Running_Light_Circuit.jpg) should be included in the repository for reference.
+* The current implementation uses busy-wait loops for delays. For more precise timing, consider using the Arduino delay() function.  This would require modifying the loop() function.
+* Ensure the LEDs are correctly connected to the specified port (e.g., PORTD).  Incorrect connections may lead to unexpected behavior or damage to the components.  Double-check the wiring against the Running_Light_Circuit.jpg diagram.
+* The images Running_Light.jpg and Running_Light_Circuit.jpg are crucial for understanding the circuit setup.  Please ensure these are included in the repository.
