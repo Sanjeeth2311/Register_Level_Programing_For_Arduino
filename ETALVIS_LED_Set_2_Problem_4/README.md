@@ -15,8 +15,8 @@ This project demonstrates a sequential LED lighting pattern using an Arduino mic
 The circuit consists of 8 LEDs connected to a single port of the Arduino (e.g., PORTC on some Arduino models). Each LED is connected to a pin of the port through a current-limiting resistor. Refer to the images below for the circuit diagram and setup.
 
 ### Images
-- **LED Sequence Setup**: [ETALVIS_LED_Set_2_Problem_4](ETALVIS_LED_Set_2_Problem_4.jpg)
-- **LED Sequence Circuit Diagram**: [ETALVIS_LED_Set_2_Problem_4_Circuit](ETALVIS_LED_Set_2_Problem_4_Circuit.jpg)
+- **LED Sequence Setup**: [ETALVIS_LED_Set_2_Problem_4](ETALVIS_LED_Set_2_Problem_4.png)
+- **LED Sequence Circuit Diagram**: [ETALVIS_LED_Set_2_Problem_4_Circuit](ETALVIS_LED_Set_2_Problem_4_Circuit.png)
 
 ## Simulation
 You can simulate this project using Wokwi. Visit the following link to try it out:
@@ -27,7 +27,6 @@ The Arduino code consists of two main functions:
 - **setup()**: Configures the port direction by setting the data direction register (DDR) to output mode (0x27, all pins set to output with 0xFF).
 - **loop()**: Sequentially sets the port data register (0x28) to values (0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80) to light each LED one at a time, with delays implemented using for loops (100,000 iterations).
 
-```
 
 ## How to Run
 1. Connect the LEDs to the Arduino as shown in the circuit diagram.
