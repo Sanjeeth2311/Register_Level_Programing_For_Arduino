@@ -1,0 +1,36 @@
+void setup() {
+  volatile char *dir;
+  dir = 0x27;
+  *dir=0xFF;
+
+}
+
+void loop() {
+  volatile char *data;
+  data=0x28;
+  long long i;
+  for(i=0; i<100000; i++){
+    *data=0x01;
+  }
+  for(i=0; i<100000; i++){
+  *data=0x02;
+  }
+  for(i=0; i<100000; i++){
+  *data=0x04;
+  }
+  for(i=0; i<100000; i++){
+  *data=0x08;
+  }
+  for(i=0; i<100000; i++){
+  *data=0x10;
+  }
+  for(i=0; i<100000; i++){
+  *data=0x20;
+  }
+  for(i=0; i<100000; i++){
+  *data=0x40;
+  }
+  for(i=0; i<100000; i++){
+  *data=0x80;
+  }
+}
