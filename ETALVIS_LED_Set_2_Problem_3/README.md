@@ -15,8 +15,8 @@ This project implements a binary counter pattern using an Arduino microcontrolle
 The circuit consists of 8 LEDs connected to a single port of the Arduino (e.g., PORTB on some Arduino models). Each LED is connected to a pin of the port through a current-limiting resistor. Refer to the images below for the circuit diagram and setup.
 
 ### Images
-- **LED Binary Counter Setup**: [ETALVIS_LED_Set_2_Problem_3](ETALVIS_LED_Set_2_Problem_3.jpg)
-- **LED Binary Counter Circuit Diagram**: [ETALVIS_LED_Set_2_Problem_3_Circuit](ETALVIS_LED_Set_2_Problem_3_Circuit.jpg)
+- **LED Binary Counter Setup**: [ETALVIS_LED_Set_2_Problem_3](ETALVIS_LED_Set_2_Problem_3.png)
+- **LED Binary Counter Circuit Diagram**: [ETALVIS_LED_Set_2_Problem_3_Circuit](ETALVIS_LED_Set_2_Problem_3_Circuit.png)
 
 ## Simulation
 You can simulate this project using Wokwi. Visit the following link to try it out:
