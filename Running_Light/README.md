@@ -36,6 +36,9 @@ After uploading the code, power the Arduino. You should observe the LEDs illumin
 
 Test the project virtually using the Wokwi simulator: [Wokwi Simulation Link](https://wokwi.com/projects/441788934650700801)
 
+## 📸 **Visuals**:
+- Circuit Diagram: [Running_Light_Circuit.png](./Running_Light_Circuit.png)
+- Circuit Photo: [Running_Light.png](./Running_Light.png)
 
 ## Notes
 
