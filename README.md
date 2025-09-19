@@ -1,6 +1,6 @@
-# Register-Level Programming on Arduino
+# Register-Level Programming for Arduino
 
-This project demonstrates **register-level (low-level) programming** on Arduino Uno (ATmega328P).  
+This project demonstrates **register-level (low-level) programming** for Arduino Mega (ATmega2560).  
 Instead of using Arduino built-in functions like `digitalWrite` or `pinMode`, this approach directly manipulates **microcontroller registers** to control hardware.
 
 ---
